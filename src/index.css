@@ -1,13 +1,151 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+}
+
+#btn-redirect-employees {
+  margin: 20px;
+}
+
+main {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#create-employee {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 40px;
+  margin-right: 150px;
+}
+
+#create-employee-form #adress-box {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 30px;
+}
+
+#create-employee-form #adress-box #adress-box-label {
+  position: absolute;
+  padding: 0px 5px;
+  top: -11px;
+  left: 15px;
+  background-color: white;
+}
+
+.btn {
+  align-items: center;
+  appearance: button;
+  background-color: #0276ff;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:active {
+  background-color: #006ae8;
+}
+
+.btn:hover {
+  background-color: #1c84ff;
+}
+
+#home-btn-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  margin-bottom: 7px;
+}
+
+.input input {
+  width: 150px;
+}
+
+#submit-employee-btn-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 35px;
+  margin-bottom: 80px;
+}
+
+p {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+/* Employees Page */
+
+.title-container {
+  display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#filter-and-search {
+  margin: 20px 0px;
+}
+
+#entries-filter span {
+  margin: 0px 5px;
+}
+
+#filter-and-search {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-bar #search {
+  margin-left: 5px;
+}
+/* Array */
