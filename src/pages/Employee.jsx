@@ -1,13 +1,18 @@
 import Header from "../components/Header";
 import { useState } from "react";
 import DataTable from "react-data-table-component";
+import { mockedEmployees } from "../data/mockedEmployees"; 
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 
 const Employees = () => {
-  // data from the redux state 
-  const employeesList = useSelector((state) => state.employeesList.employeesList);
+
+  // data from the redux state
+  const employeesListFromRedux = useSelector((state) => state.employeesList.employeesList);
+
+  // combine data from the redux state and mocked data
+  const employeesList = [...employeesListFromRedux, ...mockedEmployees];
 
   // datatable
   const columns = [
